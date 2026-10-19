@@ -7,68 +7,43 @@
   <title>Tugba Unal | Intelligent Agents E-Portfolio</title>
 
   <style>
-    :root {
-      --navy: #183153;
-      --blue: #315b85;
-      --light: #f3f6fa;
-      --white: #ffffff;
-      --text: #253247;
-      --muted: #596579;
-      --border: #dce3ed;
-    }
+    * { box-sizing: border-box; }
 
-    * {
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
+    html { scroll-behavior: smooth; }
 
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
       line-height: 1.7;
-      background: var(--light);
-      color: var(--text);
+      background: #f3f6fa;
+      color: #253247;
     }
 
     header {
-      background: var(--navy);
+      background: #183153;
       color: white;
-      padding: 48px 20px;
       text-align: center;
+      padding: 42px 20px;
     }
 
-    header h1 {
-      margin: 0 0 10px;
-      font-size: 2.4rem;
-    }
+    header h1 { margin: 0 0 12px; }
 
-    header p {
-      margin: 6px 0;
-    }
+    header p { margin: 5px 0; }
 
     nav {
       background: #10243d;
-      padding: 14px 10px;
+      padding: 13px 10px;
       text-align: center;
-      position: sticky;
-      top: 0;
-      z-index: 10;
     }
 
     nav a {
       color: white;
       text-decoration: none;
-      margin: 5px 10px;
       display: inline-block;
-      font-size: 0.95rem;
+      margin: 4px 9px;
     }
 
-    nav a:hover {
-      text-decoration: underline;
-    }
+    nav a:hover { text-decoration: underline; }
 
     main {
       max-width: 1000px;
@@ -77,740 +52,635 @@
     }
 
     section {
-      background: var(--white);
-      padding: 28px;
+      background: white;
+      padding: 26px;
       margin-bottom: 24px;
-      border-radius: 12px;
-      border: 1px solid var(--border);
-      box-shadow: 0 3px 12px rgba(20, 40, 70, 0.04);
-      scroll-margin-top: 90px;
+      border: 1px solid #dce3ed;
+      border-radius: 10px;
+      scroll-margin-top: 20px;
     }
 
     h2 {
-      color: var(--navy);
-      margin-top: 0;
-      border-bottom: 2px solid var(--border);
-      padding-bottom: 10px;
+      color: #183153;
+      border-bottom: 2px solid #dce3ed;
+      padding-bottom: 9px;
     }
 
-    h3 {
-      color: var(--blue);
-      margin-top: 26px;
-    }
+    h3 { color: #315b85; }
 
-    a {
-      color: #245b95;
-      overflow-wrap: anywhere;
-    }
-
-    .intro {
-      font-size: 1.08rem;
-    }
+    a { overflow-wrap: anywhere; }
 
     .notice {
       background: #f0f5fb;
-      border-left: 4px solid var(--blue);
-      padding: 14px 18px;
+      border-left: 4px solid #315b85;
+      padding: 14px 17px;
       margin: 18px 0;
     }
 
-    .evidence {
-      border: 1px solid var(--border);
+    .item {
+      border: 1px solid #dce3ed;
       border-radius: 8px;
-      padding: 16px;
+      padding: 15px;
       margin: 14px 0;
     }
 
-    .evidence h3 {
-      margin-top: 0;
-    }
-
-    .tag {
-      display: inline-block;
-      background: #e7edf6;
-      color: var(--navy);
-      padding: 3px 9px;
-      border-radius: 20px;
-      font-size: 0.85rem;
-      margin: 3px;
-    }
-
     footer {
-      text-align: center;
-      padding: 25px 15px;
-      background: var(--navy);
+      background: #183153;
       color: white;
+      text-align: center;
+      padding: 24px 15px;
     }
 
-    footer a {
-      color: white;
-    }
+    footer p { margin: 5px 0; }
 
     @media (max-width: 600px) {
-      header h1 {
-        font-size: 1.8rem;
-      }
-
-      section {
-        padding: 20px;
-      }
-
-      nav {
-        position: static;
-      }
+      section { padding: 19px; }
+      nav { line-height: 1.9; }
     }
   </style>
 </head>
 
 <body>
 
-  <header>
-    <h1>Intelligent Agents E-Portfolio</h1>
-    <p>Learning, Development and Critical Reflection</p>
-    <p>Student: Tugba Unal</p>
-    <p>Submission date: 19 October 2026</p>
-  </header>
-
-  <nav aria-label="Main navigation">
-    <a href="#about">About</a>
-    <a href="#project">Project</a>
-    <a href="#design">Design</a>
-    <a href="#evidence">Evidence</a>
-    <a href="#reflection">Reflections</a>
-    <a href="#learning">Learning</a>
-    <a href="#references">References</a>
-  </nav>
-
-  <main>
-
-    <section id="about">
-      <h2>1. About This Portfolio</h2>
-
-      <p class="intro">
-        This e-portfolio documents my learning and development in
-        intelligent agents. It brings together my project design,
-        practical implementation, testing evidence, and critical
-        reflections on the opportunities and risks associated with
-        artificial intelligence.
-      </p>
-
-      <p><strong>Student name:</strong> Tugba Unal</p>
-      <p><strong>Module:</strong> Learning and Development in Intelligent Agents</p>
-      <p><strong>Submission date:</strong> 19 October 2026</p>
-
-      <h3>Portfolio aims</h3>
-      <ul>
-        <li>Explain the design and implementation of an intelligent-agent project.</li>
-        <li>Present practical development and testing evidence.</li>
-        <li>Reflect critically on safety, explainability and responsible deployment.</li>
-        <li>Compare the original design with the implementation achieved.</li>
-        <li>Identify areas for future learning and improvement.</li>
-      </ul>
-
-      <div class="notice">
-        This portfolio distinguishes between the proposed system design,
-        the functionality tested locally, and features that have not
-        been verified. Evidence and limitations are reported honestly.
-      </div>
-    </section>
-
-    <section id="project">
-      <h2>2. Project Overview: Academic Evidence Investigator</h2>
-
-      <p>
-        The Academic Evidence Investigator was proposed as an intelligent
-        research assistant for postgraduate students and early-career
-        researchers. Its purpose is to help users organise research
-        questions, identify relevant literature, examine evidence and
-        prepare structured summaries.
-      </p>
-
-      <p>
-        Academic research requires more than generating fluent text.
-        Researchers need to assess the quality of sources, distinguish
-        evidence from assumptions, recognise uncertainty and verify
-        claims before using them in academic work.
-      </p>
-
-      <h3>Proposed agent roles</h3>
-
-      <div class="evidence">
-        <h3>1. Planner / Supervisor Agent</h3>
-        <p>
-          Breaks a research goal into manageable tasks, coordinates
-          the workflow and decides which activity should happen next.
-        </p>
-      </div>
-
-      <div class="evidence">
-        <h3>2. Retrieval Agent</h3>
-        <p>
-          Was designed to locate potentially relevant academic sources
-          through services such as Semantic Scholar and Crossref.
-          Retrieved records would need to be checked for accuracy
-          and relevance.
-        </p>
-      </div>
-
-      <div class="evidence">
-        <h3>3. Evidence Analysis / Critic Agent</h3>
-        <p>
-          Was designed to examine evidence, identify gaps and
-          inconsistencies, and recommend further investigation when
-          the available information is insufficient.
-        </p>
-      </div>
-
-      <div class="evidence">
-        <h3>4. Reporting Agent</h3>
-        <p>
-          Was designed to organise the findings into a structured
-          report, with clear distinctions between evidence,
-          interpretation and unresolved questions.
-        </p>
-      </div>
-
-      <h3>Intended users and value</h3>
-      <p>
-        The intended users are students and researchers who need
-        support with early-stage literature investigation. The
-        potential value is a more organised research process.
-        However, the system should support academic judgement rather
-        than replace reading, source verification or independent
-        critical thinking.
-      </p>
-    </section>
-
-    <section id="design">
-      <h2>3. Design and Implementation</h2>
-
-      <h3>Original design proposal</h3>
-      <p>
-        The group proposal considered a multi-agent architecture
-        using LangGraph to coordinate tasks. It proposed Qwen2.5-7B
-        through Hugging Face for language-model capabilities,
-        Semantic Scholar and Crossref for literature discovery,
-        JSON for structured information, SQLite for storage and
-        Flask for a possible web interface.
-      </p>
-
-      <p>
-        These technologies describe the proposed design. They should
-        not be interpreted as proof that every proposed component
-        was integrated into the final working implementation.
-      </p>
-
-      <h3>Practical implementation</h3>
-      <p>
-        The local starter project, named
-        <code>llm_planning_agent_starter</code>, was run in a Python
-        virtual environment. The program accepted a research goal
-        and generated a plan, candidate source records, a synthesis
-        and an action trace.
-      </p>
-
-      <p>
-        The implementation used a deterministic fallback path.
-        Live hosted language-model inference was not verified because
-        the Hugging Face authentication token was invalid.
-        The candidate source records included synthetic placeholder
-        data, so they cannot be treated as verified academic sources.
-      </p>
-
-      <h3>Comparison of design and implementation</h3>
-
-      <ul>
-        <li>
-          <strong>Planning:</strong> The local program demonstrated
-          a workflow for turning a goal into planned actions.
-        </li>
-        <li>
-          <strong>Research retrieval:</strong> The original design
-          proposed academic search services, but the placeholder
-          records do not demonstrate successful live literature retrieval.
-        </li>
-        <li>
-          <strong>Evidence critique:</strong> The proposed critic
-          role remains a design objective unless supported by further
-          implementation and testing evidence.
-        </li>
-        <li>
-          <strong>Reporting:</strong> The local run produced a
-          structured synthesis and action trace, but these outputs
-          require validation before being relied upon.
-        </li>
-        <li>
-          <strong>Deployment:</strong> A fully integrated,
-          production-ready multi-agent service has not been established
-          by the available test results.
-        </li>
-      </ul>
-
-      <div class="notice">
-        Critical comparison: the practical work demonstrates a
-        limited local workflow, not the complete original proposal.
-        This difference is important when evaluating project progress.
-      </div>
-
-      <h3>Development challenges</h3>
-      <p>
-        One challenge was distinguishing a program that runs
-        successfully from a system that produces trustworthy research
-        evidence. Passing software tests can demonstrate that specific
-        functions behave as expected, but it cannot independently
-        establish that sources are real, conclusions are accurate
-        or the system is safe for academic use.
-      </p>
-
-      <p>
-        A further challenge was hosted-model authentication.
-        Resolving this would require valid credentials, secure
-        configuration and additional tests. Credentials must never
-        be placed directly in publicly accessible source code.
-      </p>
-    </section>
-
-    <section id="evidence">
-      <h2>4. Practical Evidence and Testing</h2>
-
-      <h3>Local execution</h3>
-      <p>
-        The recorded local run used the research goal:
-      </p>
-
-      <blockquote>
-        How can large language models support academic research
-        while preserving academic integrity?
-      </blockquote>
-
-      <p>
-        The program produced a plan, three candidate source records,
-        a synthesis and an action trace. The recorded execution used
-        the deterministic fallback rather than verified live
-        language-model inference.
-      </p>
-
-      <h3>Unit tests</h3>
-      <p>
-        The recorded command was:
-      </p>
-
-      <pre><code>python -m unittest discover -s tests -v</code></pre>
-
-      <p>
-        The recorded result was six passing tests. This supports
-        the claim that the tested functions passed those unit tests
-        in that run. It does not establish that all possible inputs
-        work correctly or that the generated academic content
-        is factually reliable.
-      </p>
-
-      <h3>Evidence files</h3>
-
-      <div class="evidence">
-        <h3>Execution output</h3>
-        <p>
-          The project recorded output at
-          <code>evidence/latest_run.json</code>.
-          This file can be included as evidence if it is available
-          in the submitted project.
-        </p>
-      </div>
-
-      <div class="evidence">
-        <h3>Presentation and transcript</h3>
-        <p>
-          The project presentation and transcript provide a way
-          to explain the architecture, development process,
-          results and limitations. Any final submission should
-          use the actual presentation files and verified screenshots.
-        </p>
-      </div>
-
-      <h3>Screenshots and additional evidence</h3>
-      <p>
-        Add genuine screenshots of the running program, the unit-test
-        results and relevant code here before submission. Captions
-        should explain what each screenshot demonstrates.
-      </p>
-
-      <div class="notice">
-        Evidence still to add: actual screenshots, weekly exercise
-        outputs, genuine forum contributions, any separate data
-        analysis, and any additional implementation evidence required
-        by the assignment. Do not describe missing evidence as completed.
-      </div>
-    </section>
-
-    <section id="reflection">
-      <h2>5. Reflective Case Studies</h2>
-
-      <p>
-        The following case studies use Rolfe, Freshwater and Jasper's
-        reflective structure: What? So what? Now what? They address
-        AI safety constraints, explainable decisions and responsible
-        deployment. They should be personalised with specific examples
-        from the module exercises and discussions before submission.
-      </p>
-
-      <h3>Case Study 1: AI Safety Constraints</h3>
-
-      <h3>What?</h3>
-      <p>
-        The Academic Evidence Investigator is intended to help users
-        investigate academic questions. Such a system may produce
-        incorrect claims, misinterpret source material or present
-        uncertain information too confidently. The local prototype's
-        use of placeholder records illustrates why generated outputs
-        must not automatically be treated as reliable evidence.
-      </p>
-
-      <h3>So what?</h3>
-      <p>
-        Safety is not only a question of preventing obviously harmful
-        behaviour. In an academic setting, an inaccurate citation
-        or unsupported claim can damage the quality and integrity
-        of a student's work. An agent that continues acting without
-        checking the quality of its evidence may amplify errors
-        across later stages of a workflow.
-      </p>
-
-      <p>
-        This changed how I understand autonomy. A system can be
-        technically capable of completing multiple steps without
-        being sufficiently reliable to make every decision alone.
-        Its authority should be limited by the consequences of
-        an error and the quality of the information available.
-      </p>
-
-      <h3>Now what?</h3>
-      <p>
-        I would introduce clear boundaries for each agent, validate
-        source records, record the origin of claims and flag missing
-        or uncertain evidence. The system should stop and request
-        human review when it cannot verify an important claim.
-        Future testing should include missing information, irrelevant
-        sources, contradictory evidence and deliberately malformed
-        records.
-      </p>
-
-      <p>
-        I would also test whether the system correctly communicates
-        its limitations instead of producing a confident but
-        unsupported answer. These measures would make the workflow
-        more cautious and easier to evaluate.
-      </p>
-
-      <h3>Case Study 2: Explainable Decisions (XAI)</h3>
-
-      <h3>What?</h3>
-      <p>
-        An intelligent research assistant may make several decisions:
-        how to divide a research goal, which records to consider,
-        what evidence to summarise and when to recommend another
-        search. Users need enough information to understand these
-        decisions and assess the resulting output.
-      </p>
-
-      <h3>So what?</h3>
-      <p>
-        A polished answer is not necessarily an explainable one.
-        If a system does not show why it selected a source or
-        how a claim relates to the available evidence, a user may
-        find it difficult to detect errors. This is particularly
-        important for academic work, where claims should be
-        traceable to credible sources.
-      </p>
-
-      <p>
-        The local program's action trace provides a starting point
-        for making workflow steps visible. However, an action trace
-        alone does not prove that the underlying reasoning is
-        correct. Explanations must be connected to evidence that
-        can be independently checked.
-      </p>
-
-      <h3>Now what?</h3>
-      <p>
-        I would provide source details, explain the purpose of
-        each major step and link individual claims to supporting
-        passages where possible. The interface should distinguish
-        retrieved facts, generated interpretations and unresolved
-        questions.
-      </p>
-
-      <p>
-        I would evaluate explanations by asking whether a user
-        can identify the sources behind a conclusion, recognise
-        uncertainty and challenge an incorrect result. This would
-        make explainability a testable requirement rather than
-        a purely visual feature.
-      </p>
-
-      <h3>Case Study 3: Responsible Deployment</h3>
-
-      <h3>What?</h3>
-      <p>
-        The proposed research assistant could save time during
-        early-stage literature investigation. However, its outputs
-        could be misleading if records are synthetic, outdated,
-        irrelevant or incorrectly summarised. Users may also
-        over-rely on automation when its limitations are unclear.
-      </p>
-
-      <h3>So what?</h3>
-      <p>
-        Responsible deployment requires considering how people
-        actually use a system, not just whether the software runs.
-        A prototype that works in a controlled demonstration may
-        behave differently with real research questions and
-        incomplete evidence.
-      </p>
-
-      <p>
-        The distinction between the original multi-agent proposal
-        and the limited local implementation also matters. It
-        would be misleading to present proposed features as
-        implemented features or to claim research accuracy without
-        suitable evaluation.
-      </p>
-
-      <h3>Now what?</h3>
-      <p>
-        Before wider deployment, I would test the system with
-        representative research tasks, use genuine and verifiable
-        source records, document known limitations and establish
-        a process for reporting errors. Human users should remain
-        responsible for checking sources and deciding which
-        conclusions are suitable for academic use.
-      </p>
-
-      <p>
-        I would also review privacy and data-handling practices,
-        especially if users submit unpublished research or
-        personal information. Deployment should follow appropriate
-        institutional guidance and be informed by the risks
-        discovered during testing.
-      </p>
-
-      <h3>Overall reflection</h3>
-      <p>
-        These case studies show that building an intelligent agent
-        involves more than implementing a workflow. The system
-        must also be evaluated for reliability, transparency and
-        responsible use. My next step is to strengthen the practical
-        evidence and connect each reflection to a specific module
-        activity or observed development challenge.
-      </p>
-    </section>
-
-    <section id="learning">
-      <h2>6. Learning Activities and Contributions</h2>
-
-      <h3>Module exercises</h3>
-      <p>
-        This section should contain the outputs of the module
-        exercises, including scripts, agent implementations,
-        system designs and any required analysis.
-      </p>
-
-      <div class="notice">
-        Add your actual exercise outputs here. For each activity,
-        state its purpose, what you produced, what you learned
-        and how it connects to intelligent-agent design.
-      </div>
-
-      <h3>Data analysis</h3>
-      <p>
-        Include any data analysis completed for the module.
-        Explain the data used, the method, the results and
-        the limitations. Only report numerical results that
-        can be supported by your actual analysis.
-      </p>
-
-      <h3>Forum contributions</h3>
-      <p>
-        Add links, screenshots or text from your genuine module
-        forum contributions. Explain how the discussion affected
-        your thinking or helped you reconsider a design decision.
-      </p>
-
-      <div class="notice">
-        Add evidence of your actual forum posts and weekly
-        activities before submitting. Do not invent contributions
-        or claim to have completed activities that are missing.
-      </div>
-
-      <h3>Skills developed</h3>
-      <ul>
-        <li>
-          <strong>Technical understanding:</strong> connecting
-          a proposed agent architecture with a runnable local workflow.
-        </li>
-        <li>
-          <strong>Testing:</strong> using unit tests to check
-          specific software behaviour.
-        </li>
-        <li>
-          <strong>Critical evaluation:</strong> distinguishing
-          successful execution from reliable research results.
-        </li>
-        <li>
-          <strong>Responsible AI:</strong> considering safety,
-          explainability, source verification and human oversight.
-        </li>
-      </ul>
-    </section>
-
-    <section id="future">
-      <h2>7. Future Development Plan</h2>
-
-      <ol>
-        <li>
-          <strong>Improve evidence quality.</strong>
-          Replace synthetic records with real, verifiable academic
-          records and validate their metadata.
-        </li>
-        <li>
-          <strong>Resolve model integration.</strong>
-          Configure authentication securely and verify whether
-          live model inference works as intended.
-        </li>
-        <li>
-          <strong>Strengthen evaluation.</strong>
-          Test realistic questions, irrelevant sources,
-          contradictory evidence and failure cases.
-        </li>
-        <li>
-          <strong>Improve explainability.</strong>
-          Make sources, important actions, uncertainty and
-          limitations visible to users.
-        </li>
-        <li>
-          <strong>Complete the portfolio evidence.</strong>
-          Add genuine module outputs, screenshots, forum
-          contributions, relevant analysis and a verified
-          reference list.
-        </li>
-      </ol>
-
-      <p>
-        These are planned improvements, not claims that the work
-        has already been completed.
-      </p>
-    </section>
-
-    <section id="conclusion">
-      <h2>8. Conclusion</h2>
-
-      <p>
-        Developing the Academic Evidence Investigator has provided
-        an opportunity to examine the relationship between
-        intelligent-agent design and practical implementation.
-        The proposed architecture offers a structured way to
-        think about planning, retrieval, evidence analysis and
-        reporting.
-      </p>
-
-      <p>
-        The local prototype demonstrated a limited workflow and
-        passed six recorded unit tests. At the same time, the
-        deterministic fallback, unverified live inference and
-        synthetic candidate records limit what can be concluded
-        about its real-world research capabilities.
-      </p>
-
-      <p>
-        My main learning point is that an intelligent agent should
-        not be evaluated only by whether it completes a task.
-        Its evidence, uncertainty, safety boundaries and impact
-        on human decisions also matter. Future development should
-        therefore combine technical testing with critical
-        evaluation and responsible oversight.
-      </p>
-    </section>
-
-    <section id="references">
-      <h2>9. References</h2>
-
-      <ul>
-        <li>
-          Lewis, P., Perez, E., Piktus, A., Petroni, F., Karpukhin, V.,
-          Goyal, N., Kuttler, H., Lewis, M., Yih, W.-T., Rocktaschel, T.,
-          Riedel, S. and Kiela, D. (2020).
-          'Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks'.
-          <em>Advances in Neural Information Processing Systems</em>.
-          <a href="https://arxiv.org/abs/2005.11401" target="_blank">
-            https://arxiv.org/abs/2005.11401
-          </a>.
-        </li>
-
-        <li>
-          Rolfe, G., Freshwater, D. and Jasper, M. (2001).
-          <em>Critical Reflection for Nursing and the Helping Professions:
-          A User's Guide.</em> Basingstoke: Palgrave Macmillan.
-        </li>
-
-        <li>
-          Wooldridge, M. (2009).
-          <em>An Introduction to MultiAgent Systems.</em>
-          2nd ed. Chichester: John Wiley &amp; Sons.
-          <a href="https://www.wiley.com/en-us/An%2BIntroduction%2Bto%2BMultiAgent%2BSystems-p-9780470519462"
-             target="_blank">
-            Publisher information
-          </a>.
-        </li>
-
-        <li>
-          Yao, S., Zhao, J., Yu, D., Du, N., Shafran, I.,
-          Narasimhan, K. and Cao, Y. (2023).
-          'ReAct: Synergizing Reasoning and Acting in Language Models'.
-          <em>International Conference on Learning Representations (ICLR).</em>
-          <a href="https://arxiv.org/abs/2210.03629" target="_blank">
-            https://arxiv.org/abs/2210.03629
-          </a>.
-        </li>
-      </ul>
-
-      <h3>Referencing note</h3>
-      <p>
-        These references provide background for retrieval-augmented
-        generation, reflective practice, multi-agent systems and
-        reasoning-and-acting approaches. Cite each source in the
-        relevant discussion in accordance with the university's
-        required referencing style. Add any other sources actually
-        used in the portfolio.
-      </p>
-
-      <p>
-        University AI guidance:
-        <a href="https://www.my-course.co.uk/course/view.php?id=14&amp;section=15"
-           target="_blank">
-          Guidance on the use of AI
-        </a>.
-      </p>
-    </section>
-
-    <section id="checklist">
-      <h2>10. Final Submission Checklist</h2>
-
-      <ul>
-        <li>Personalise the reflective case studies with specific learning experiences.</li>
-        <li>Add actual weekly exercise outputs and scripts.</li>
-        <li>Add genuine screenshots of the implementation and test results.</li>
-        <li>Add actual forum contributions and any required data analysis.</li>
-        <li>Check all references and in-text citations.</li>
-        <li>Check the required word count and university AI-use declaration.</li>
-        <li>Confirm that all claims about implementation match the evidence.</li>
-      </ul>
-    </section>
-
-  </main>
-
-  <footer>
-    <p>Intelligent Agents E-Portfolio | Tugba Unal | 19 October 2026</p>
-    <p>Academic work should be supported by verifiable evidence and appropriate referencing.</p>
-  </footer>
+<header>
+  <h1>Intelligent Agents E-Portfolio</h1>
+  <p>Learning, Development and Critical Reflection</p>
+  <p><strong>Student name:</strong> Tugba Unal</p>
+  <p><strong>Module:</strong> Learning and Development in Intelligent Agents</p>
+  <p><strong>Submission date:</strong> 19 October 2026</p>
+</header>
+
+<nav aria-label="Main navigation">
+  <a href="#about">About</a>
+  <a href="#project">Project</a>
+  <a href="#design">Design</a>
+  <a href="#evidence">Evidence</a>
+  <a href="#reflection">Reflections</a>
+  <a href="#learning">Learning Activities</a>
+  <a href="#references">References</a>
+</nav>
+
+<main>
+
+<section id="about">
+  <h2>1. About This Portfolio</h2>
+
+  <p>
+    This e-portfolio documents my learning and development in intelligent
+    agents. It presents my project design, practical implementation,
+    testing evidence and critical reflections on the opportunities and
+    risks associated with artificial intelligence.
+  </p>
+
+  <p><strong>Student name:</strong> Tugba Unal</p>
+  <p><strong>Module:</strong> Learning and Development in Intelligent Agents</p>
+  <p><strong>Submission date:</strong> 19 October 2026</p>
+
+  <h3>Portfolio objectives</h3>
+  <ul>
+    <li>Explain the design and implementation of an intelligent-agent project.</li>
+    <li>Present practical development and testing evidence.</li>
+    <li>Reflect on AI safety, explainability and responsible deployment.</li>
+    <li>Compare the original design proposal with the practical implementation.</li>
+    <li>Identify areas for future learning and improvement.</li>
+  </ul>
+
+  <div class="notice">
+    This portfolio distinguishes between proposed features, functionality
+    tested locally and features that have not been verified.
+  </div>
+</section>
+
+<section id="project">
+  <h2>2. Project Overview: Academic Evidence Investigator</h2>
+
+  <p>
+    The Academic Evidence Investigator was proposed as an intelligent
+    research assistant for postgraduate students and early-career
+    researchers. Its intended purpose is to help users organise research
+    questions, identify relevant literature, examine evidence and prepare
+    structured summaries.
+  </p>
+
+  <p>
+    Academic research requires more than generating fluent text.
+    Researchers need to assess source quality, distinguish evidence
+    from assumptions, recognise uncertainty and verify claims before
+    relying on them in academic work.
+  </p>
+
+  <h3>Proposed agent architecture</h3>
+
+  <div class="item">
+    <h3>1. Planner / Supervisor Agent</h3>
+    <p>
+      Intended to break a research goal into manageable tasks,
+      coordinate the workflow and decide which activity should happen next.
+    </p>
+  </div>
+
+  <div class="item">
+    <h3>2. Retrieval Agent</h3>
+    <p>
+      Intended to locate potentially relevant academic sources through
+      services such as Semantic Scholar and Crossref. Retrieved records
+      would need to be checked for accuracy and relevance.
+    </p>
+  </div>
+
+  <div class="item">
+    <h3>3. Evidence Analysis / Critic Agent</h3>
+    <p>
+      Intended to examine evidence, identify gaps and inconsistencies,
+      and recommend further investigation when information is insufficient.
+    </p>
+  </div>
+
+  <div class="item">
+    <h3>4. Reporting Agent</h3>
+    <p>
+      Intended to organise findings into a structured report, distinguishing
+      evidence, interpretation and unresolved questions.
+    </p>
+  </div>
+
+  <h3>Intended benefits and limitations</h3>
+  <p>
+    The proposed system could help researchers organise early-stage
+    literature investigation. It should support rather than replace
+    independent reading, source verification and academic judgement.
+    The quality of its results would depend on the sources available,
+    the methods used and the effectiveness of its evaluation.
+  </p>
+</section>
+
+<section id="design">
+  <h2>3. Design and Implementation</h2>
+
+  <h3>Original design proposal</h3>
+  <p>
+    The group proposal considered a multi-agent architecture using
+    LangGraph to coordinate tasks. It proposed Qwen2.5-7B through
+    Hugging Face for language-model capabilities, Semantic Scholar
+    and Crossref for literature discovery, JSON for structured
+    information, SQLite for storage and Flask for a possible web interface.
+  </p>
+
+  <p>
+    These technologies describe the proposed design. They do not
+    demonstrate that every component was integrated into the final
+    implementation.
+  </p>
+
+  <h3>Practical implementation</h3>
+  <p>
+    The local starter project, named
+    <code>llm_planning_agent_starter</code>, was run in a Python
+    virtual environment. The recorded program accepted a research goal
+    and produced a plan, candidate source records, a synthesis and
+    an action trace.
+  </p>
+
+  <p>
+    The recorded run used a deterministic fallback rather than verified
+    live language-model inference. Live hosted inference remained
+    unverified because the Hugging Face authentication token was invalid.
+    The candidate source records included synthetic placeholder data
+    and must not be treated as verified academic sources.
+  </p>
+
+  <h3>Design compared with implementation</h3>
+  <ul>
+    <li>
+      <strong>Planning:</strong> The local program demonstrated a workflow
+      for turning a goal into planned actions.
+    </li>
+    <li>
+      <strong>Retrieval:</strong> Academic search services were proposed,
+      but the placeholder records do not demonstrate successful live
+      literature retrieval.
+    </li>
+    <li>
+      <strong>Evidence analysis:</strong> The critic agent remains a
+      design objective unless supported by further implementation evidence.
+    </li>
+    <li>
+      <strong>Reporting:</strong> The local run produced a structured
+      synthesis and action trace, but the outputs require validation.
+    </li>
+    <li>
+      <strong>Deployment:</strong> A fully integrated, production-ready
+      multi-agent service has not been established by the available results.
+    </li>
+  </ul>
+
+  <div class="notice">
+    The practical work demonstrates a limited local workflow, not the
+    complete original proposal. This distinction is important when
+    evaluating project progress.
+  </div>
+
+  <h3>Development challenges</h3>
+  <p>
+    One challenge was distinguishing a program that runs successfully
+    from a system that produces trustworthy academic evidence.
+    Passing software tests can show that specific functions behave
+    as expected, but it does not establish that sources are real,
+    conclusions are accurate or the system is safe for academic use.
+  </p>
+
+  <p>
+    Another challenge was hosted-model authentication. Resolving this
+    would require valid credentials, secure configuration and further
+    testing. Credentials should never be placed directly in public code.
+  </p>
+</section>
+
+<section id="evidence">
+  <h2>4. Practical Evidence and Testing</h2>
+
+  <h3>Recorded local execution</h3>
+  <p>The research goal used in the recorded run was:</p>
+
+  <blockquote>
+    How can large language models support academic research while
+    preserving academic integrity?
+  </blockquote>
+
+  <p>
+    The program produced a plan, three candidate source records,
+    a synthesis and an action trace. The recorded execution used
+    deterministic fallback behaviour rather than verified live
+    language-model inference.
+  </p>
+
+  <h3>Unit testing</h3>
+  <p>The recorded test command was:</p>
+
+  <pre><code>python -m unittest discover -s tests -v</code></pre>
+
+  <p>
+    The recorded result was six passing tests. This supports the
+    claim that the tested functions passed those tests in that run.
+    It does not prove that every possible input works correctly or
+    that generated academic content is factually reliable.
+  </p>
+
+  <h3>Execution output</h3>
+  <p>
+    The project recorded its latest run at
+    <code>evidence/latest_run.json</code>. Include this file as
+    supporting evidence if it is available in the submitted project.
+  </p>
+
+  <h3>Additional evidence to include</h3>
+  <ul>
+    <li>Genuine screenshots of the program running.</li>
+    <li>Actual screenshots or output showing the unit-test results.</li>
+    <li>Relevant code or project files that demonstrate implementation.</li>
+    <li>The project presentation and transcript, if required.</li>
+    <li>Weekly exercise outputs, forum contributions and any required analysis.</li>
+  </ul>
+
+  <div class="notice">
+    Add actual evidence before submission. Do not describe missing
+    screenshots, activities or tests as completed.
+  </div>
+</section>
+
+<section id="reflection">
+  <h2>5. Reflective Case Studies</h2>
+
+  <p>
+    These three case studies use the reflective structure associated
+    with Rolfe, Freshwater and Jasper (2001): What? So what? Now what?
+    They discuss AI safety constraints, explainable decisions and
+    responsible deployment. Before submission, personalise them with
+    specific examples from your module activities and experience.
+  </p>
+
+  <h3>Case Study 1: AI Safety Constraints</h3>
+
+  <h3>What?</h3>
+  <p>
+    The Academic Evidence Investigator is intended to help users
+    investigate academic questions. Such a system may produce incorrect
+    claims, misinterpret source material or present uncertain information
+    too confidently. The local prototype's use of placeholder records
+    illustrates why generated outputs must not automatically be treated
+    as reliable evidence.
+  </p>
+
+  <h3>So what?</h3>
+  <p>
+    Safety is not only about preventing obviously harmful behaviour.
+    In academic work, an inaccurate citation or unsupported claim can
+    damage the quality and integrity of a student's submission.
+    An agent that continues acting without checking evidence quality
+    may carry errors into later stages of a workflow.
+  </p>
+
+  <p>
+    This helped me recognise that technical autonomy and trustworthy
+    autonomy are different. A system may complete several steps
+    independently without being sufficiently reliable to make every
+    decision alone. Its authority should depend on the consequences
+    of an error and the quality of the available information.
+  </p>
+
+  <h3>Now what?</h3>
+  <p>
+    I would validate source records, record the origin of claims,
+    identify missing evidence and flag uncertainty. The system should
+    request human review when it cannot verify an important claim.
+    Further tests should include irrelevant sources, contradictory
+    evidence and malformed records.
+  </p>
+
+  <p>
+    I would also test whether the system communicates its limitations
+    instead of producing a confident but unsupported answer. These
+    measures would make the workflow more cautious and easier to evaluate.
+  </p>
+
+  <h3>Case Study 2: Explainable Decisions (XAI)</h3>
+
+  <h3>What?</h3>
+  <p>
+    An intelligent research assistant may decide how to divide a research
+    goal, which records to consider, what evidence to summarise and
+    when to recommend another search. Users need enough information
+    to understand these decisions and assess the resulting output.
+  </p>
+
+  <h3>So what?</h3>
+  <p>
+    A polished answer is not necessarily an explainable one. If a
+    system does not show why it selected a source or how a claim relates
+    to the evidence, users may struggle to identify errors. Academic
+    claims should be traceable to credible sources.
+  </p>
+
+  <p>
+    The local program's action trace offers a starting point for making
+    workflow steps visible. However, an action trace alone does not
+    prove that the underlying reasoning is correct. Explanations need
+    to be connected to evidence that can be independently checked.
+  </p>
+
+  <h3>Now what?</h3>
+  <p>
+    I would provide source details, explain the purpose of major steps
+    and link claims to supporting passages where possible. The system
+    should distinguish retrieved information, generated interpretation
+    and unresolved questions.
+  </p>
+
+  <p>
+    I would evaluate explanations by checking whether users can identify
+    the sources behind a conclusion, recognise uncertainty and challenge
+    an incorrect result. This would make explainability a testable
+    requirement rather than simply a visual feature.
+  </p>
+
+  <h3>Case Study 3: Responsible Deployment</h3>
+
+  <h3>What?</h3>
+  <p>
+    The proposed research assistant could save time during early-stage
+    literature investigation. However, its outputs could be misleading
+    if records are synthetic, outdated, irrelevant or incorrectly
+    summarised. Users may also rely too heavily on automation when
+    its limitations are unclear.
+  </p>
+
+  <h3>So what?</h3>
+  <p>
+    Responsible deployment requires considering how people actually
+    use a system, not just whether the software runs. A prototype
+    that works in a controlled demonstration may behave differently
+    with real research questions and incomplete evidence.
+  </p>
+
+  <p>
+    It is also important to distinguish the original proposal from
+    the implementation achieved. It would be misleading to present
+    proposed features as implemented features or to claim research
+    accuracy without suitable evaluation.
+  </p>
+
+  <h3>Now what?</h3>
+  <p>
+    Before wider deployment, I would test the system with representative
+    research tasks, use genuine and verifiable source records, document
+    known limitations and establish a process for reporting errors.
+    Users should remain responsible for checking sources and deciding
+    whether conclusions are suitable for academic use.
+  </p>
+
+  <p>
+    I would also review privacy and data-handling practices, particularly
+    if users submit unpublished research or personal information.
+    Deployment should follow relevant institutional guidance and
+    take account of risks identified during testing.
+  </p>
+
+  <h3>Overall reflection</h3>
+  <p>
+    These case studies demonstrate that building an intelligent agent
+    involves more than implementing a workflow. Reliability,
+    transparency and responsible use are also important. My next
+    step is to strengthen the practical evidence and connect each
+    reflection to specific module activities and development experiences.
+  </p>
+</section>
+
+<section id="learning">
+  <h2>6. Learning Activities and Contributions</h2>
+
+  <h3>Module exercises</h3>
+  <p>
+    This section should contain the actual outputs of module exercises,
+    including scripts, agent implementations, system designs and any
+    required data analysis.
+  </p>
+
+  <div class="notice">
+    Add your real exercise outputs here. For each activity, explain
+    its purpose, what you produced, what you learned and how it
+    connects to intelligent-agent design.
+  </div>
+
+  <h3>Data analysis</h3>
+  <p>
+    Include any data analysis completed for the module. Explain
+    the data, method, results and limitations. Report numerical
+    results only when supported by your actual analysis.
+  </p>
+
+  <h3>Forum contributions</h3>
+  <p>
+    Add links, screenshots or text from your genuine module forum
+    contributions. Explain how the discussions influenced your
+    thinking or helped you reconsider a design decision.
+  </p>
+
+  <div class="notice">
+    Add actual evidence of weekly activities and forum contributions.
+    Do not invent contributions or claim to have completed activities
+    that are missing.
+  </div>
+
+  <h3>Skills developed</h3>
+  <ul>
+    <li>Connecting a proposed agent architecture with a runnable workflow.</li>
+    <li>Using unit tests to check specific software behaviour.</li>
+    <li>Distinguishing successful execution from reliable research results.</li>
+    <li>Considering safety, explainability, verification and human oversight.</li>
+  </ul>
+</section>
+
+<section id="future">
+  <h2>7. Future Development Plan</h2>
+
+  <ol>
+    <li>
+      <strong>Improve evidence quality:</strong>
+      replace synthetic records with real, verifiable academic records
+      and validate their metadata.
+    </li>
+    <li>
+      <strong>Resolve model integration:</strong>
+      configure authentication securely and verify whether live
+      model inference works as intended.
+    </li>
+    <li>
+      <strong>Strengthen evaluation:</strong>
+      test realistic questions, irrelevant sources, contradictory
+      evidence and failure cases.
+    </li>
+    <li>
+      <strong>Improve explainability:</strong>
+      make sources, important actions, uncertainty and limitations
+      visible to users.
+    </li>
+    <li>
+      <strong>Complete the portfolio evidence:</strong>
+      add genuine module outputs, screenshots, forum contributions,
+      relevant analysis and a verified reference list.
+    </li>
+  </ol>
+
+  <p>These are proposed improvements, not claims that the work is complete.</p>
+</section>
+
+<section id="conclusion">
+  <h2>8. Conclusion</h2>
+
+  <p>
+    Developing the Academic Evidence Investigator has provided an
+    opportunity to examine the relationship between intelligent-agent
+    design and practical implementation. The proposed architecture
+    offers a structured way to think about planning, retrieval,
+    evidence analysis and reporting.
+  </p>
+
+  <p>
+    The local prototype demonstrated a limited workflow and passed
+    six recorded unit tests. However, deterministic fallback behaviour,
+    unverified live inference and synthetic candidate records limit
+    what can be concluded about its real-world research capabilities.
+  </p>
+
+  <p>
+    My main learning point is that an intelligent agent should not
+    be evaluated only by whether it completes a task. Its evidence,
+    uncertainty, safety boundaries and impact on human decisions
+    also matter. Future development should combine technical testing
+    with critical evaluation and responsible oversight.
+  </p>
+</section>
+
+<section id="references">
+  <h2>9. References</h2>
+
+  <ul>
+    <li>
+      Lewis, P., Perez, E., Piktus, A., Petroni, F., Karpukhin, V.,
+      Goyal, N., Kuttler, H., Lewis, M., Yih, W.-T., Rocktaschel, T.,
+      Riedel, S. and Kiela, D. (2020).
+      'Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks'.
+      <em>Advances in Neural Information Processing Systems.</em>
+      <a href="https://arxiv.org/abs/2005.11401" target="_blank">
+        https://arxiv.org/abs/2005.11401
+      </a>.
+    </li>
+
+    <li>
+      Rolfe, G., Freshwater, D. and Jasper, M. (2001).
+      <em>Critical Reflection for Nursing and the Helping Professions:
+      A User's Guide.</em> Basingstoke: Palgrave Macmillan.
+    </li>
+
+    <li>
+      Wooldridge, M. (2009).
+      <em>An Introduction to MultiAgent Systems.</em>
+      2nd ed. Chichester: John Wiley &amp; Sons.
+      <a href="https://www.wiley.com/en-us/An%2BIntroduction%2Bto%2BMultiAgent%2BSystems-p-9780470519462"
+         target="_blank">
+        Publisher information
+      </a>.
+    </li>
+
+    <li>
+      Yao, S., Zhao, J., Yu, D., Du, N., Shafran, I.,
+      Narasimhan, K. and Cao, Y. (2023).
+      'ReAct: Synergizing Reasoning and Acting in Language Models'.
+      <em>International Conference on Learning Representations (ICLR).</em>
+      <a href="https://arxiv.org/abs/2210.03629" target="_blank">
+        https://arxiv.org/abs/2210.03629
+      </a>.
+    </li>
+  </ul>
+
+  <h3>University AI guidance</h3>
+  <p>
+    <a href="https://www.my-course.co.uk/course/view.php?id=14&amp;section=15"
+       target="_blank">
+      University guidance on the use of AI
+    </a>
+  </p>
+
+  <p>
+    These sources provide background for retrieval-augmented generation,
+    reflective practice, multi-agent systems and reasoning-and-acting
+    approaches. Cite them in the relevant sections of the portfolio
+    and follow the referencing style required by the university.
+    Add any additional sources actually used.
+  </p>
+</section>
+
+<section id="checklist">
+  <h2>10. Final Submission Checklist</h2>
+
+  <ul>
+    <li>Personalise the reflective case studies with specific learning experiences.</li>
+    <li>Add actual weekly exercise outputs and scripts.</li>
+    <li>Add genuine implementation screenshots and test results.</li>
+    <li>Add actual forum contributions and any required data analysis.</li>
+    <li>Check that references and in-text citations match.</li>
+    <li>Check the required word count and AI-use declaration.</li>
+    <li>Ensure every claim about implementation is supported by evidence.</li>
+  </ul>
+</section>
+
+</main>
+
+<footer>
+  <p><strong>Tugba Unal</strong></p>
+  <p>Learning and Development in Intelligent Agents</p>
+  <p>Submission date: 19 October 2026</p>
+</footer>
 
 </body>
 </html>
