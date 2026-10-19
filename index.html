@@ -7,9 +7,13 @@
   <title>Tugba Unal | Intelligent Agents E-Portfolio</title>
 
   <style>
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
 
-    html { scroll-behavior: smooth; }
+    html {
+      scroll-behavior: smooth;
+    }
 
     body {
       margin: 0;
@@ -26,9 +30,13 @@
       padding: 42px 20px;
     }
 
-    header h1 { margin: 0 0 12px; }
+    header h1 {
+      margin: 0 0 12px;
+    }
 
-    header p { margin: 5px 0; }
+    header p {
+      margin: 5px 0;
+    }
 
     nav {
       background: #10243d;
@@ -43,7 +51,9 @@
       margin: 4px 9px;
     }
 
-    nav a:hover { text-decoration: underline; }
+    nav a:hover {
+      text-decoration: underline;
+    }
 
     main {
       max-width: 1000px;
@@ -66,9 +76,13 @@
       padding-bottom: 9px;
     }
 
-    h3 { color: #315b85; }
+    h3 {
+      color: #315b85;
+    }
 
-    a { overflow-wrap: anywhere; }
+    a {
+      overflow-wrap: anywhere;
+    }
 
     .notice {
       background: #f0f5fb;
@@ -91,11 +105,18 @@
       padding: 24px 15px;
     }
 
-    footer p { margin: 5px 0; }
+    footer p {
+      margin: 5px 0;
+    }
 
     @media (max-width: 600px) {
-      section { padding: 19px; }
-      nav { line-height: 1.9; }
+      section {
+        padding: 19px;
+      }
+
+      nav {
+        line-height: 1.9;
+      }
     }
   </style>
 </head>
@@ -114,9 +135,9 @@
   <a href="#about">About</a>
   <a href="#project">Project</a>
   <a href="#design">Design</a>
-  <a href="#evidence">Evidence</a>
   <a href="#reflection">Reflections</a>
-  <a href="#learning">Learning Activities</a>
+  <a href="#future">Future Development</a>
+  <a href="#conclusion">Conclusion</a>
   <a href="#references">References</a>
 </nav>
 
@@ -128,8 +149,8 @@
   <p>
     This e-portfolio documents my learning and development in intelligent
     agents. It presents my project design, practical implementation,
-    testing evidence and critical reflections on the opportunities and
-    risks associated with artificial intelligence.
+    and critical reflections on the opportunities and risks associated
+    with artificial intelligence.
   </p>
 
   <p><strong>Student name:</strong> Tugba Unal</p>
@@ -139,9 +160,8 @@
   <h3>Portfolio objectives</h3>
   <ul>
     <li>Explain the design and implementation of an intelligent-agent project.</li>
-    <li>Present practical development and testing evidence.</li>
+    <li>Evaluate the original design against the practical implementation.</li>
     <li>Reflect on AI safety, explainability and responsible deployment.</li>
-    <li>Compare the original design proposal with the practical implementation.</li>
     <li>Identify areas for future learning and improvement.</li>
   </ul>
 
@@ -296,67 +316,15 @@
   </p>
 </section>
 
-<section id="evidence">
-  <h2>4. Practical Evidence and Testing</h2>
-
-  <h3>Recorded local execution</h3>
-  <p>The research goal used in the recorded run was:</p>
-
-  <blockquote>
-    How can large language models support academic research while
-    preserving academic integrity?
-  </blockquote>
-
-  <p>
-    The program produced a plan, three candidate source records,
-    a synthesis and an action trace. The recorded execution used
-    deterministic fallback behaviour rather than verified live
-    language-model inference.
-  </p>
-
-  <h3>Unit testing</h3>
-  <p>The recorded test command was:</p>
-
-  <pre><code>python -m unittest discover -s tests -v</code></pre>
-
-  <p>
-    The recorded result was six passing tests. This supports the
-    claim that the tested functions passed those tests in that run.
-    It does not prove that every possible input works correctly or
-    that generated academic content is factually reliable.
-  </p>
-
-  <h3>Execution output</h3>
-  <p>
-    The project recorded its latest run at
-    <code>evidence/latest_run.json</code>. Include this file as
-    supporting evidence if it is available in the submitted project.
-  </p>
-
-  <h3>Additional evidence to include</h3>
-  <ul>
-    <li>Genuine screenshots of the program running.</li>
-    <li>Actual screenshots or output showing the unit-test results.</li>
-    <li>Relevant code or project files that demonstrate implementation.</li>
-    <li>The project presentation and transcript, if required.</li>
-    <li>Weekly exercise outputs, forum contributions and any required analysis.</li>
-  </ul>
-
-  <div class="notice">
-    Add actual evidence before submission. Do not describe missing
-    screenshots, activities or tests as completed.
-  </div>
-</section>
-
 <section id="reflection">
-  <h2>5. Reflective Case Studies</h2>
+  <h2>4. Reflective Case Studies</h2>
 
   <p>
     These three case studies use the reflective structure associated
     with Rolfe, Freshwater and Jasper (2001): What? So what? Now what?
     They discuss AI safety constraints, explainable decisions and
-    responsible deployment. Before submission, personalise them with
-    specific examples from your module activities and experience.
+    responsible deployment. Personalise them with specific examples
+    from your module activities and experience before submission.
   </p>
 
   <h3>Case Study 1: AI Safety Constraints</h3>
@@ -495,53 +463,8 @@
   </p>
 </section>
 
-<section id="learning">
-  <h2>6. Learning Activities and Contributions</h2>
-
-  <h3>Module exercises</h3>
-  <p>
-    This section should contain the actual outputs of module exercises,
-    including scripts, agent implementations, system designs and any
-    required data analysis.
-  </p>
-
-  <div class="notice">
-    Add your real exercise outputs here. For each activity, explain
-    its purpose, what you produced, what you learned and how it
-    connects to intelligent-agent design.
-  </div>
-
-  <h3>Data analysis</h3>
-  <p>
-    Include any data analysis completed for the module. Explain
-    the data, method, results and limitations. Report numerical
-    results only when supported by your actual analysis.
-  </p>
-
-  <h3>Forum contributions</h3>
-  <p>
-    Add links, screenshots or text from your genuine module forum
-    contributions. Explain how the discussions influenced your
-    thinking or helped you reconsider a design decision.
-  </p>
-
-  <div class="notice">
-    Add actual evidence of weekly activities and forum contributions.
-    Do not invent contributions or claim to have completed activities
-    that are missing.
-  </div>
-
-  <h3>Skills developed</h3>
-  <ul>
-    <li>Connecting a proposed agent architecture with a runnable workflow.</li>
-    <li>Using unit tests to check specific software behaviour.</li>
-    <li>Distinguishing successful execution from reliable research results.</li>
-    <li>Considering safety, explainability, verification and human oversight.</li>
-  </ul>
-</section>
-
 <section id="future">
-  <h2>7. Future Development Plan</h2>
+  <h2>5. Future Development Plan</h2>
 
   <ol>
     <li>
@@ -565,17 +488,20 @@
       visible to users.
     </li>
     <li>
-      <strong>Complete the portfolio evidence:</strong>
-      add genuine module outputs, screenshots, forum contributions,
-      relevant analysis and a verified reference list.
+      <strong>Complete the portfolio:</strong>
+      check that all assignment requirements and supporting evidence
+      are included in the submitted work, even if not displayed
+      as separate sections on this website.
     </li>
   </ol>
 
-  <p>These are proposed improvements, not claims that the work is complete.</p>
+  <p>
+    These are proposed improvements, not claims that the work is complete.
+  </p>
 </section>
 
 <section id="conclusion">
-  <h2>8. Conclusion</h2>
+  <h2>6. Conclusion</h2>
 
   <p>
     Developing the Academic Evidence Investigator has provided an
@@ -602,7 +528,7 @@
 </section>
 
 <section id="references">
-  <h2>9. References</h2>
+  <h2>7. References</h2>
 
   <ul>
     <li>
@@ -611,8 +537,9 @@
       Riedel, S. and Kiela, D. (2020).
       'Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks'.
       <em>Advances in Neural Information Processing Systems.</em>
-      <a href="https://arxiv.org/abs/2005.11401" target="_blank">
-        https://arxiv.org/abs/2005.11401
+      <a href="https://arxiv.org/abs/2005.11401" target="_blank"
+         rel="noopener noreferrer">
+        Read online
       </a>.
     </li>
 
@@ -627,7 +554,7 @@
       <em>An Introduction to MultiAgent Systems.</em>
       2nd ed. Chichester: John Wiley &amp; Sons.
       <a href="https://www.wiley.com/en-us/An%2BIntroduction%2Bto%2BMultiAgent%2BSystems-p-9780470519462"
-         target="_blank">
+         target="_blank" rel="noopener noreferrer">
         Publisher information
       </a>.
     </li>
@@ -637,8 +564,9 @@
       Narasimhan, K. and Cao, Y. (2023).
       'ReAct: Synergizing Reasoning and Acting in Language Models'.
       <em>International Conference on Learning Representations (ICLR).</em>
-      <a href="https://arxiv.org/abs/2210.03629" target="_blank">
-        https://arxiv.org/abs/2210.03629
+      <a href="https://arxiv.org/abs/2210.03629" target="_blank"
+         rel="noopener noreferrer">
+        Read online
       </a>.
     </li>
   </ul>
@@ -646,7 +574,7 @@
   <h3>University AI guidance</h3>
   <p>
     <a href="https://www.my-course.co.uk/course/view.php?id=14&amp;section=15"
-       target="_blank">
+       target="_blank" rel="noopener noreferrer">
       University guidance on the use of AI
     </a>
   </p>
@@ -658,20 +586,6 @@
     and follow the referencing style required by the university.
     Add any additional sources actually used.
   </p>
-</section>
-
-<section id="checklist">
-  <h2>10. Final Submission Checklist</h2>
-
-  <ul>
-    <li>Personalise the reflective case studies with specific learning experiences.</li>
-    <li>Add actual weekly exercise outputs and scripts.</li>
-    <li>Add genuine implementation screenshots and test results.</li>
-    <li>Add actual forum contributions and any required data analysis.</li>
-    <li>Check that references and in-text citations match.</li>
-    <li>Check the required word count and AI-use declaration.</li>
-    <li>Ensure every claim about implementation is supported by evidence.</li>
-  </ul>
 </section>
 
 </main>
