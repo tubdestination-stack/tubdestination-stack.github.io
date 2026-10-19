@@ -73,4 +73,361 @@
     <p>Full academic references will be included here to support the project discussion and reflective case studies.</p>
  </section>
 </body>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Intelligent Agents E-Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+      line-height: 1.7;
+      color: #263238;
+      background: #ffffff;
+    }
+    header {
+      background: #24527a;
+      color: white;
+      padding: 35px;
+      border-radius: 12px;
+    }
+    header h1 { margin-top: 0; }
+    nav { margin: 22px 0; line-height: 2.2; }
+    nav a {
+      color: #24527a;
+      margin-right: 14px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      margin: 24px 0;
+      padding: 22px;
+      background: #f3f7fa;
+      border-radius: 10px;
+    }
+    h2, h3 { color: #24527a; }
+    .notice {
+      background: #fff4d6;
+      padding: 15px;
+      border-radius: 8px;
+    }
+    .evidence {
+      background: white;
+      padding: 14px;
+      border-left: 4px solid #24527a;
+      margin: 12px 0;
+    }
+    footer {
+      margin: 35px 0;
+      color: #5b6570;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>My Intelligent Agents E-Portfolio</h1>
+  <p>Learning and Development in Intelligent Agents</p>
+  <p>A reflection on intelligent-agent design, implementation,
+  testing and responsible artificial intelligence.</p>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#project">Project</a>
+  <a href="#design">Design and Implementation</a>
+  <a href="#evidence">Practical Evidence</a>
+  <a href="#reflection">Reflections</a>
+  <a href="#activities">Learning Activities</a>
+  <a href="#references">References</a>
+</nav>
+
+<section id="about">
+  <h2>1. About This Portfolio</h2>
+  <p>
+    This individual e-portfolio documents my learning about intelligent
+    agents, practical development, system testing and responsible AI.
+    It brings together my project work, critical evaluation and reflections
+    on the opportunities and limitations of autonomous systems.
+  </p>
+  <p><strong>Student name:</strong> [Add your name]</p>
+  <p><strong>Module:</strong> Learning and Development in Intelligent Agents</p>
+  <p><strong>Submission date:</strong> [Add submission date]</p>
+</section>
+
+<section id="project">
+  <h2>2. My Project: Academic Evidence Investigator</h2>
+  <p>
+    The Academic Evidence Investigator was proposed as an AI-assisted
+    research tool for postgraduate students and early-career researchers.
+    Its intended purpose was to help users break down a research question,
+    identify potentially relevant literature, consider evidence quality
+    and produce a structured research briefing.
+  </p>
+  <p>
+    The original group proposal described four specialist roles:
+    a Planner/Supervisor Agent, a Retrieval Agent, an Evidence
+    Analysis/Critic Agent and a Reporting Agent. The design aimed to
+    divide the work into manageable stages and support human review
+    of the resulting research briefing.
+  </p>
+  <p>
+    The project helped me understand that an intelligent agent involves
+    more than generating a response. A workflow can plan actions,
+    process information, record intermediate results and provide outputs
+    that can be inspected and tested.
+  </p>
+</section>
+
+<section id="design">
+  <h2>3. Comparing the Proposed Design with the Implementation</h2>
+  <h3>Proposed design</h3>
+  <p>
+    The group proposal described a multi-agent architecture using
+    LangGraph for orchestration, a configurable Qwen model through
+    Hugging Face, Semantic Scholar and Crossref for academic retrieval,
+    JSON for structured information, SQLite for persistence and Flask
+    for a user interface. It also proposed further searching when
+    evidence was weak or unbalanced.
+  </p>
+  <h3>Demonstrated implementation</h3>
+  <p>
+    The available local implementation accepted a research goal,
+    generated a plan, returned candidate source records, produced a
+    synthesis and recorded an action trace in a JSON file. The local
+    program ran using deterministic fallback behaviour.
+  </p>
+  <p>
+    Six unit tests were reported as passing. However, live hosted LLM
+    inference and genuine academic retrieval were not verified. The
+    candidate records used in the demonstration were synthetic
+    placeholders, not confirmed academic publications.
+  </p>
+  <p>
+    This comparison shows why it is important to distinguish the
+    original design from the features that were actually demonstrated.
+    A proposed feature should not be described as implemented unless
+    there is evidence to support that claim.
+  </p>
+  <p><strong>Additional evidence:</strong> [Add your actual Week 7
+  design and Week 11 implementation evidence, if required by the module.]</p>
+</section>
+
+<section id="evidence">
+  <h2>4. Practical Implementation and Testing</h2>
+  <p>
+    The local program was run with the research question:
+    “How can large language models support academic research while
+    preserving academic integrity?”
+  </p>
+  <p>
+    The run produced a plan, candidate records, a synthesis and an
+    action trace. The result was saved in
+    <code>evidence/latest_run.json</code>. This demonstrates a local
+    software workflow, but it does not demonstrate a completed
+    literature search using verified academic sources.
+  </p>
+  <p>
+    The reported test command was
+    <code>python -m unittest discover -s tests -v</code>.
+    Six tests passed in the reported run. These results support the
+    specific behaviours covered by the tests, but do not prove that
+    every intended feature works or that the generated research
+    conclusions are accurate.
+  </p>
+  <div class="evidence">
+    <strong>Evidence to add:</strong>
+    <ul>
+      <li>[Insert a genuine screenshot of the successful test run.]</li>
+      <li>[Insert a screenshot of the program output.]</li>
+      <li>[Insert a screenshot or excerpt of the saved JSON run record.]</li>
+      <li>[Explain briefly what each item demonstrates.]</li>
+    </ul>
+  </div>
+</section>
+
+<section id="reflection">
+  <h2>5. Reflective Case Studies</h2>
+  <p>
+    The following reflections use Rolfe et al.’s (2001) framework:
+    What? So what? Now what?
+  </p>
+
+  <h3>Case Study 1: AI Safety and Bounded Autonomy</h3>
+  <h4>What?</h4>
+  <p>
+    The proposed system was intended to support researchers rather than
+    replace their judgement. Its design separated planning, retrieval,
+    evidence analysis and reporting. The local demonstration exposed
+    intermediate stages and an action trace. However, the available
+    evidence does not establish that all proposed safety controls or
+    the critic-driven re-planning loop were implemented.
+  </p>
+  <h4>So what?</h4>
+  <p>
+    An autonomous system can produce convincing-looking output even
+    when its evidence is incomplete. In academic work, an unsupported
+    summary could mislead a researcher or encourage an unsuitable
+    citation. Recording actions makes execution easier to inspect,
+    but it does not prove that the system's decisions are correct.
+    Human oversight is therefore important.
+  </p>
+  <h4>Now what?</h4>
+  <p>
+    I would introduce explicit stopping conditions, warnings when
+    evidence is missing and a human approval step before a briefing
+    is used as research evidence. I would test these safeguards using
+    empty results, malformed records and conflicting sources. These
+    are proposed improvements, not claims about features already
+    implemented.
+  </p>
+
+  <h3>Case Study 2: Explainable AI Decisions</h3>
+  <h4>What?</h4>
+  <p>
+    The demonstrated pipeline produced a plan, candidate records,
+    a synthesis and an action trace. It also saved a JSON run record.
+    The implementation used a simple keyword-overlap baseline to
+    match a goal to candidate records rather than verified semantic
+    search.
+  </p>
+  <h4>So what?</h4>
+  <p>
+    Visible intermediate steps make a system easier to inspect and
+    help a developer investigate unexpected results. However,
+    visibility is not the same as a complete explanation. Keyword
+    overlap can identify records containing similar words without
+    showing that the records are relevant or scientifically reliable.
+    A saved execution record is evidence of what ran, not proof
+    that its conclusions are accurate.
+  </p>
+  <h4>Now what?</h4>
+  <p>
+    I would record why each source was selected, retain source
+    information alongside each claim and distinguish source-based
+    evidence from generated interpretation. A human reviewer could
+    then check whether the explanation is understandable and whether
+    the original source supports the associated claim.
+  </p>
+
+  <h3>Case Study 3: Responsible AI Deployment</h3>
+  <h4>What?</h4>
+  <p>
+    The local run used synthetic demonstration records and deterministic
+    fallback behaviour. An attempt to access Hugging Face failed
+    because the token was rejected as invalid. Consequently, live
+    hosted inference and genuine scholarly retrieval were not verified
+    in the available evidence.
+  </p>
+  <h4>So what?</h4>
+  <p>
+    Presenting synthetic records as real publications would mislead
+    users and undermine academic integrity. Similarly, describing
+    fallback output as live model output would exaggerate what was
+    tested. Responsible development requires honest reporting,
+    protection of credentials and verification of evidence.
+  </p>
+  <h4>Now what?</h4>
+  <p>
+    Before deployment, I would verify publication details against
+    original records, test live model access, record integration
+    failures and protect API credentials. I would also label
+    demonstration data clearly and require generated summaries
+    to be checked before they are used in academic work.
+  </p>
+</section>
+
+<section id="activities">
+  <h2>6. Weekly Learning Activities and Exercises</h2>
+  <p>
+    This section must contain evidence from the actual module activities.
+    For each activity, explain what the task asked, what you did,
+    what result you obtained and what you learned.
+  </p>
+  <div class="evidence">
+    <strong>Activity 1:</strong> [Add the real activity title, your
+    work, your learning and a screenshot or file.]
+  </div>
+  <div class="evidence">
+    <strong>Activity 2:</strong> [Add the real activity title, your
+    work, your learning and a screenshot or file.]
+  </div>
+  <div class="evidence">
+    <strong>Activity 3:</strong> [Add the real activity title, your
+    work, your learning and a screenshot or file.]
+  </div>
+
+  <h2>7. Forum Contributions</h2>
+  <p>
+    [Add genuine forum posts or permitted screenshots. Explain the
+    point you made, how it relates to intelligent agents or responsible
+    AI, and whether another student's contribution changed or
+    strengthened your view.]
+  </p>
+
+  <h2>8. Data Analysis and Interpretation</h2>
+  <p>
+    The current demonstration uses synthetic placeholder records.
+    It therefore cannot be treated as a dataset of real academic
+    publications or used to draw conclusions about a research topic.
+    Its output can instead be examined as a software execution trace:
+    the input goal, the plan, the returned records, the synthesis
+    and the warnings.
+  </p>
+  <p>
+    [Add any separate data analysis required by your module, using
+    your actual dataset, method, results and interpretation.]
+  </p>
+</section>
+
+<section id="references">
+  <h2>9. References</h2>
+  <p>
+    Add the complete, verified academic references used in the
+    portfolio, following your university's required referencing style.
+    Check every author, title, year, publication and DOI or URL
+    against the original source.
+  </p>
+  <ul>
+    <li>[Add verified reference 1.]</li>
+    <li>[Add verified reference 2.]</li>
+    <li>[Add verified reference 3.]</li>
+  </ul>
+</section>
+
+<section>
+  <h2>10. Final Reflection</h2>
+  <p>
+    This project has helped me recognise the importance of evaluating
+    intelligent-agent systems through observable behaviour rather
+    than intended design alone. Modular stages, automated tests and
+    saved execution records provide a useful starting point for
+    debugging and reproducibility. At the same time, a successful
+    local run does not prove that a research assistant is complete
+    or reliable. My future improvements would focus on verified
+    sources, clearer explanations, stronger safeguards and human
+    review.
+  </p>
+  <p>
+    [Add a personal example of a difficulty you experienced, how
+    you responded to it and what you would do differently next time.]
+  </p>
+</section>
+
+<footer>
+  <p>
+    This portfolio distinguishes demonstrated results from proposed
+    features and identifies limitations where evidence is incomplete.
+  </p>
+</footer>
+
+</body>
+</html>
+
 </html>
